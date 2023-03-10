@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "metabase-file-import"
+version = "0.1.0"
+description = ""
+authors = ["THIVEND <baptiste.thivend@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "metabase_file_import"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = "^2.0.5.post1"
+psycopg2 = "^2.9.5"
+pandas = "^1.5.3"
+openpyxl = "^3.1.1"
+
+[tool.poetry.scripts]
+main = "metabase_file_import.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
